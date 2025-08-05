@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+   display: inline;
+   padding: 10px ;
+   color: aliceblue;
+   width: 100%;
+}
+
+#ul1{
+    background-color: black;
+    position: fixed;
+    width: 100%;
+     display: flex;         
+     flex-direction: row;
+     z-index: 10;
+}
+a:hover{
+    background-color: green;
+}
+ 
+#div1{
+
+    position: relative;
+    height: 500px;
+}
+#img1{
+    position: absolute ;
+    z-index: -1;
+    width: 500px;
+    height: 500px;
+}
+#div2{
+    position: absolute;
+    z-index: 9;
+        color: cadetblue;
+        background-color: black;
+
+}
+
+#div3{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; 
+  justify-content: space-between;
+  max-width: 960px;
+}
+#div3 img {
+  width: 32%; 
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+   
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  z-index: 1;
+}
+
+/* Dropdown links */
+.dropdown-content li a {
+  padding: 10px;
+  display: block;
+  color: white;
+}
+
+/* Show the dropdown on hover */
+.li1:hover .dropdown-content {
+  display: block;
+}
+
+/* Optional: hover effect on dropdown links */
+.dropdown-content li a:hover {
+  background-color: green;
+}
